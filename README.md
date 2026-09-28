@@ -14,6 +14,7 @@ The database consists of 8 normalized tables with proper Primary and Foreign Key
 6. **Prescriptions** - Links appointments to medical notes.
 7. **PrescriptionDetails** - Junction table handling prescription items and dosages.
 8. **Payments** - Financial tracking for appointments and billing status.
+   
 
 ---
 
@@ -28,6 +29,7 @@ The database consists of 8 normalized tables with proper Primary and Foreign Key
   * **Functions:** Scalar functions for computed values (`fn_GetDoctorTotalAppointments`).
   * **Triggers:** Automated data validation (`trg_PreventNegativeStock`).
 * **Subqueries:** Nested queries for dynamic filtering (e.g., finding medicines above average price).
+* **Transactions:** ACID-compliant transaction blocks with `BEGIN TRAN`, `COMMIT`, `TRY...CATCH`, and `ROLLBACK` for safe multi-step database updates.
 
 ---
 
@@ -35,7 +37,7 @@ The database consists of 8 normalized tables with proper Primary and Foreign Key
 1. Open **SQL Server Management Studio (SSMS)**.
 2. Run the table creation script to set up `HospitalDB`.
 3. Execute the insert scripts to populate sample data.
-4. Run individual query or stored procedure scripts to test analytics and reporting features.
+4. Run individual query, view, stored procedure, and transaction scripts to test analytics and reporting features.
 
 ---
 *Developed as part of a professional full-stack development portfolio.*
