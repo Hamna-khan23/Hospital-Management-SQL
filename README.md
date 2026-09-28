@@ -1,2 +1,41 @@
-# Hospital-Management-SQL
+# 🏥 Hospital Management Database (SQL Server)
+
 A comprehensive, production-ready SQL database project designed to showcase advanced database design, complex querying, and programmatic database objects in Microsoft SQL Server (SSMS).
+
+---
+
+## 📂 Database Schema & Architecture
+The database consists of 8 normalized tables with proper Primary and Foreign Key constraints:
+1. **Departments** - Manages hospital departments.
+2. **Doctors** - Stores doctor profiles and department links.
+3. **Patients** - Maintains patient demographics.
+4. **Appointments** - Tracks patient-doctor bookings and statuses.
+5. **Medicines** - Inventory management for medical supplies.
+6. **Prescriptions** - Links appointments to medical notes.
+7. **PrescriptionDetails** - Junction table handling prescription items and dosages.
+8. **Payments** - Financial tracking for appointments and billing status.
+
+---
+
+## 🛠️ Features & SQL Concepts Covered
+* **DDL & DML Operations:** `CREATE DATABASE`, `CREATE TABLE`, `INSERT`, `UPDATE`, `DELETE`, `SELECT`
+* **Relational Integrity:** Primary Keys, Foreign Keys, and Constraints (`CHECK`, `DEFAULT`)
+* **Advanced Joins:** `INNER JOIN`, `LEFT JOIN`, and multi-table joins.
+* **Aggregations & Filtering:** `GROUP BY`, `HAVING`, `ORDER BY`, Aggregate Functions (`SUM`, `AVG`, `COUNT`).
+* **Programmability:** 
+  * **Views:** Reusable virtual tables for complex reporting (`vw_AppointmentDetails`).
+  * **Stored Procedures:** Dynamic logic execution (`sp_GetDoctorsByDepartment`).
+  * **Functions:** Scalar functions for computed values (`fn_GetDoctorTotalAppointments`).
+  * **Triggers:** Automated data validation (`trg_PreventNegativeStock`).
+* **Subqueries:** Nested queries for dynamic filtering (e.g., finding medicines above average price).
+
+---
+
+## 🚀 How to Run
+1. Open **SQL Server Management Studio (SSMS)**.
+2. Run the table creation script to set up `HospitalDB`.
+3. Execute the insert scripts to populate sample data.
+4. Run individual query or stored procedure scripts to test analytics and reporting features.
+
+---
+*Developed as part of a professional full-stack development portfolio.*
