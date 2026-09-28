@@ -35,9 +35,9 @@ The database consists of 8 normalized tables with proper Primary and Foreign Key
 
 ## 🚀 How to Run
 1. Open **SQL Server Management Studio (SSMS)**.
-2. Run the table creation script to set up `HospitalDB`.
-3. Execute the insert scripts to populate sample data.
-4. Run individual query, view, stored procedure, and transaction scripts to test analytics and reporting features.
+2. All database scripts, queries, and programmable objects are consolidated into a single file (`HospitalManagement_CompleteProject.sql`).
+3. Open the file in SSMS and execute the entire script to create the database, tables, sample data, and all advanced objects.
+4. Once executed, you can individually test or run specific reports, views, stored procedures, or transaction blocks as needed.
 
 ---
 *Developed as part of a professional full-stack development portfolio.*
